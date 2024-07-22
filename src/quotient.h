@@ -13,9 +13,9 @@ struct quotient {
 	const int numerator;
 	const int denominator;
 	
-	bool (*is_reductible)(quotient * self_ptr);
+	bool (*is_reducible)(quotient * self_ptr);
 	
-	void (*reduct)(quotient ** self_ptr);
+	void (*reduce)(quotient ** self_ptr);
 	
 	void (*add)(quotient ** self_ptr, quotient * other);
 	
